@@ -83,4 +83,9 @@ public class AutomatMHD {
     public int getTrzba() {
         return this.trzba;
     }
+    
+    // nastavCenuListka
+    public void nastavCenuListka(int cenaListka) {
+        this.cenaListka = cenaListka;
+    }
 }
