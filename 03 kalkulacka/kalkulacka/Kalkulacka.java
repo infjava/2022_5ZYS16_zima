@@ -29,6 +29,17 @@ public class Kalkulacka {
                 break;
         }
         
+        switch (operacia) {
+            case '!':
+                int faktorial = 1;
+                for (int i = 2; i <= this.predchadzajucaHodnota; i++) {
+                    faktorial = faktorial * i;
+                }
+                
+                this.predchadzajucaHodnota = faktorial;
+                break;
+        }
+        
         this.predchadzajucaOperacia = operacia;
     }
     
