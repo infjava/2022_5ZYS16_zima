@@ -1,33 +1,108 @@
 public class Kalkulacka {
     private double operand;
     private double predchadzajucaHodnota;
+    private char predchadzajucaOperacia;
     
     public Kalkulacka() {
         this.operand = 0;
         this.predchadzajucaHodnota = 0;
+        this.predchadzajucaOperacia = '+';
     }
     
     public void scitaj() {
-        this.predchadzajucaHodnota = this.predchadzajucaHodnota + this.operand;
+        switch (this.predchadzajucaOperacia) {
+            case '+':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota + this.operand;
+                break;
+            case '-':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota - this.operand;
+                break;
+            case '*':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
+                break;
+            case '/':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                break;
+        }
+        
+        this.predchadzajucaOperacia = '+';
     }
     
     public void odcitaj() {
-        this.predchadzajucaHodnota = this.predchadzajucaHodnota - this.operand;
+        switch (this.predchadzajucaOperacia) {
+            case '+':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota + this.operand;
+                break;
+            case '-':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota - this.operand;
+                break;
+            case '*':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
+                break;
+            case '/':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                break;
+        }
+        
+        this.predchadzajucaOperacia = '-';
     }
     
     public void vynasob() {
-        this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
+        switch (this.predchadzajucaOperacia) {
+            case '+':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota + this.operand;
+                break;
+            case '-':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota - this.operand;
+                break;
+            case '*':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
+                break;
+            case '/':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                break;
+        }
+        
+        this.predchadzajucaOperacia = '*';
     }
     
     public void vydel() {
-        if (this.operand != 0) {
-            this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
-        } else {
-            System.out.println("Sorry, ale delit nulou nemozes");
+        switch (this.predchadzajucaOperacia) {
+            case '+':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota + this.operand;
+                break;
+            case '-':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota - this.operand;
+                break;
+            case '*':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
+                break;
+            case '/':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                break;
         }
+        
+        this.predchadzajucaOperacia = '/';
     }
     
     public double getVysledok() {
+        switch (this.predchadzajucaOperacia) {
+            case '+':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota + this.operand;
+                break;
+            case '-':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota - this.operand;
+                break;
+            case '*':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
+                break;
+            case '/':
+                this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                break;
+        }
+        
+        this.predchadzajucaOperacia = '=';
+        
         return this.predchadzajucaHodnota;
     }
     
