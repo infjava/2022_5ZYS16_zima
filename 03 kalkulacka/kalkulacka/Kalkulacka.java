@@ -18,7 +18,11 @@ public class Kalkulacka {
     }
     
     public void vydel(double operand) {
-        this.predchadzajucaHodnota = this.predchadzajucaHodnota / operand;
+        if (operand != 0) {
+            this.predchadzajucaHodnota = this.predchadzajucaHodnota / operand;
+        } else {
+            System.out.println("Sorry, ale delit nulou nemozes");
+        }
     }
     
     public double getVysledok() {
