@@ -21,7 +21,11 @@ public class Kalkulacka {
                 this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
                 break;
             case '/':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                if (this.operand != 0) {
+                    this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                } else {
+                    System.out.println("Sorry, ale delit nulou nemozes");
+                }
                 break;
         }
         
@@ -40,7 +44,11 @@ public class Kalkulacka {
                 this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
                 break;
             case '/':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                if (this.operand != 0) {
+                    this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                } else {
+                    System.out.println("Sorry, ale delit nulou nemozes");
+                }
                 break;
         }
         
@@ -59,7 +67,11 @@ public class Kalkulacka {
                 this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
                 break;
             case '/':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                if (this.operand != 0) {
+                    this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                } else {
+                    System.out.println("Sorry, ale delit nulou nemozes");
+                }
                 break;
         }
         
@@ -78,7 +90,11 @@ public class Kalkulacka {
                 this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
                 break;
             case '/':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                if (this.operand != 0) {
+                    this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                } else {
+                    System.out.println("Sorry, ale delit nulou nemozes");
+                }
                 break;
         }
         
@@ -97,7 +113,11 @@ public class Kalkulacka {
                 this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
                 break;
             case '/':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                if (this.operand != 0) {
+                    this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
+                } else {
+                    System.out.println("Sorry, ale delit nulou nemozes");
+                }
                 break;
         }
         
