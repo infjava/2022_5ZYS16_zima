@@ -39,8 +39,4 @@ public class Kalkulacka {
     public void setOperand(double operand) {
         this.operand = operand;
     }
-    
-    public void setPociatocneCislo(double pociatocneCislo) {
-        this.predchadzajucaHodnota = pociatocneCislo;
-    }
 }
