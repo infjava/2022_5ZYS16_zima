@@ -9,7 +9,7 @@ public class Kalkulacka {
         this.predchadzajucaOperacia = '+';
     }
     
-    public void scitaj() {
+    public void vykonaj(char operacia) {
         switch (this.predchadzajucaOperacia) {
             case '+':
                 this.predchadzajucaHodnota = this.predchadzajucaHodnota + this.operand;
@@ -29,100 +29,10 @@ public class Kalkulacka {
                 break;
         }
         
-        this.predchadzajucaOperacia = '+';
-    }
-    
-    public void odcitaj() {
-        switch (this.predchadzajucaOperacia) {
-            case '+':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota + this.operand;
-                break;
-            case '-':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota - this.operand;
-                break;
-            case '*':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
-                break;
-            case '/':
-                if (this.operand != 0) {
-                    this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
-                } else {
-                    System.out.println("Sorry, ale delit nulou nemozes");
-                }
-                break;
-        }
-        
-        this.predchadzajucaOperacia = '-';
-    }
-    
-    public void vynasob() {
-        switch (this.predchadzajucaOperacia) {
-            case '+':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota + this.operand;
-                break;
-            case '-':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota - this.operand;
-                break;
-            case '*':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
-                break;
-            case '/':
-                if (this.operand != 0) {
-                    this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
-                } else {
-                    System.out.println("Sorry, ale delit nulou nemozes");
-                }
-                break;
-        }
-        
-        this.predchadzajucaOperacia = '*';
-    }
-    
-    public void vydel() {
-        switch (this.predchadzajucaOperacia) {
-            case '+':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota + this.operand;
-                break;
-            case '-':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota - this.operand;
-                break;
-            case '*':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
-                break;
-            case '/':
-                if (this.operand != 0) {
-                    this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
-                } else {
-                    System.out.println("Sorry, ale delit nulou nemozes");
-                }
-                break;
-        }
-        
-        this.predchadzajucaOperacia = '/';
+        this.predchadzajucaOperacia = operacia;
     }
     
     public double getVysledok() {
-        switch (this.predchadzajucaOperacia) {
-            case '+':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota + this.operand;
-                break;
-            case '-':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota - this.operand;
-                break;
-            case '*':
-                this.predchadzajucaHodnota = this.predchadzajucaHodnota * this.operand;
-                break;
-            case '/':
-                if (this.operand != 0) {
-                    this.predchadzajucaHodnota = this.predchadzajucaHodnota / this.operand;
-                } else {
-                    System.out.println("Sorry, ale delit nulou nemozes");
-                }
-                break;
-        }
-        
-        this.predchadzajucaOperacia = '=';
-        
         return this.predchadzajucaHodnota;
     }
     
