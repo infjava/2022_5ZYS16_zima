@@ -6,11 +6,11 @@ public class CirkusStringerto {
     }
     
     public String opakujRetazec(int pocet) {
-        String docasnyRetazec = "";
+        StringBuilder docasnyRetazec = new StringBuilder();
         for (int i = 0; i < pocet; i++) {
-            docasnyRetazec = this.retazec + docasnyRetazec;
+            docasnyRetazec.append(this.retazec);
         }
         
-        return docasnyRetazec;
+        return docasnyRetazec.toString();
     }
 }
