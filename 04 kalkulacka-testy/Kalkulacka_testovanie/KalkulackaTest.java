@@ -11,6 +11,8 @@ import org.junit.Test;
  * @version (a version number or a date)
  */
 public class KalkulackaTest {
+    private Kalkulacka kalkulacka;
+    
     /**
      * Sets up the test fixture.
      *
@@ -18,34 +20,31 @@ public class KalkulackaTest {
      */
     @Before
     public void setUp() {
-        
+        this.kalkulacka = new Kalkulacka();
     }
     
     @Test
     public void nastavenieOperandu10() {
-        Kalkulacka kalkulacka = new Kalkulacka();
-        kalkulacka.zadajCislo(10);
-        Assert.assertEquals(10, kalkulacka.getOperand(), 0.0001);
+        this.kalkulacka.zadajCislo(10);
+        Assert.assertEquals(10, this.kalkulacka.getOperand(), 0.0001);
     }
     
     @Test
     public void vypocet2Plus3() {
-        Kalkulacka kalkulacka = new Kalkulacka();
-        kalkulacka.zadajCislo(2);
-        kalkulacka.zadajOperaciu('+');
-        kalkulacka.zadajCislo(3);
-        kalkulacka.zadajOperaciu('=');
-        Assert.assertEquals(5, kalkulacka.getVysledok(), 0.0001);
+        this.kalkulacka.zadajCislo(2);
+        this.kalkulacka.zadajOperaciu('+');
+        this.kalkulacka.zadajCislo(3);
+        this.kalkulacka.zadajOperaciu('=');
+        Assert.assertEquals(5, this.kalkulacka.getVysledok(), 0.0001);
     }
     
     @Test
     public void vypocet2Krat3() {
-        Kalkulacka kalkulacka = new Kalkulacka();
-        kalkulacka.zadajCislo(2);
-        kalkulacka.zadajOperaciu('*');
-        kalkulacka.zadajCislo(3);
-        kalkulacka.zadajOperaciu('=');
-        Assert.assertEquals(6, kalkulacka.getVysledok(), 0.0001);
+        this.kalkulacka.zadajCislo(2);
+        this.kalkulacka.zadajOperaciu('*');
+        this.kalkulacka.zadajCislo(3);
+        this.kalkulacka.zadajOperaciu('=');
+        Assert.assertEquals(6, this.kalkulacka.getVysledok(), 0.0001);
     }
 }
 
