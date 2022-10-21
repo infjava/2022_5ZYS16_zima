@@ -1,6 +1,6 @@
 
 
-import static org.junit.Assert.*;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,4 +20,12 @@ public class KalkulackaTest {
     public void setUp() {
         
     }
+    
+    @Test
+    public void nastavenieOperandu10() {
+        Kalkulacka kalkulacka = new Kalkulacka();
+        kalkulacka.zadajCislo(10);
+        Assert.assertEquals(10, kalkulacka.getOperand(), 0.0001);
+    }
 }
+
