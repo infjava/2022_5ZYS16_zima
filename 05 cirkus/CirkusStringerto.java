@@ -29,4 +29,15 @@ public class CirkusStringerto {
     public boolean jePalindromKratky() {
         return new StringBuilder(this.retazec).reverse().equals(this.retazec);
     }
+    
+    public String posunDoprava(int oKolko) {
+        StringBuilder docasnyRetazec = new StringBuilder();
+        for (int i = 0; i < oKolko; i++) {
+            docasnyRetazec.append(' ');
+        }
+        
+        docasnyRetazec.append(this.retazec);
+        
+        return docasnyRetazec.toString();
+    }
 }
