@@ -37,5 +37,15 @@ public class KalkulackaTest {
         kalkulacka.zadajOperaciu('=');
         Assert.assertEquals(5, kalkulacka.getVysledok(), 0.0001);
     }
+    
+    @Test
+    public void vypocet2Krat3() {
+        Kalkulacka kalkulacka = new Kalkulacka();
+        kalkulacka.zadajCislo(2);
+        kalkulacka.zadajOperaciu('*');
+        kalkulacka.zadajCislo(3);
+        kalkulacka.zadajOperaciu('=');
+        Assert.assertEquals(6, kalkulacka.getVysledok(), 0.0001);
+    }
 }
 
