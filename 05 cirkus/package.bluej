@@ -1,3 +1,32 @@
 #BlueJ package file
-#Fri Oct 21 11:12:15 CEST 2022
+editor.fx.0.height=776
+editor.fx.0.width=1296
+editor.fx.0.x=-8
+editor.fx.0.y=-8
+objectbench.height=230
+objectbench.width=246
+package.divider.horizontal=0.34657534246575344
+package.divider.vertical=0.5871080139372822
+package.editor.height=330
+package.editor.width=636
+package.editor.x=130
+package.editor.y=86
+package.frame.height=674
+package.frame.width=766
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
 project.charset=UTF-8
+readme.height=58
+readme.name=@README
+readme.width=47
+readme.x=10
+readme.y=10
+target1.height=50
+target1.name=CirkusStringerto
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=130
+target1.x=130
+target1.y=100

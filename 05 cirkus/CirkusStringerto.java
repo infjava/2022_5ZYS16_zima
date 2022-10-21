@@ -31,13 +31,6 @@ public class CirkusStringerto {
     }
     
     public String posunDoprava(int oKolko) {
-        StringBuilder docasnyRetazec = new StringBuilder();
-        for (int i = 0; i < oKolko; i++) {
-            docasnyRetazec.append(' ');
-        }
-        
-        docasnyRetazec.append(this.retazec);
-        
-        return docasnyRetazec.toString();
+        return String.format("%" + oKolko + "s%s", " ", this.retazec);
     }
 }
