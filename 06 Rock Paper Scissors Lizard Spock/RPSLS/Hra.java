@@ -15,9 +15,16 @@ public class Hra {
         
         this.hrac = new Hrac(dlanHraca);
         this.pocitac = new Pocitac(dlanPocitaca);
-        
+    }
+    
+    public void spusti() {
         Manazer manazer = new Manazer();
         manazer.spravujObjekt(this.hrac);
         manazer.spravujObjekt(this.pocitac);
+        manazer.spravujObjekt(this);
+    }
+    
+    public void zrus() {
+        System.exit(0);
     }
 }
