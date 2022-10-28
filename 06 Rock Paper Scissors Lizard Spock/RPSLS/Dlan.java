@@ -2,9 +2,10 @@ public class Dlan {
     private Obrazok gesto;
     private int aktualneGesto;
     
-    public Dlan() {
+    public Dlan(int x) {
         this.gesto = new Obrazok("pics\\lizard.png");
         this.gesto.zobraz();
+        this.gesto.zmenPolohu(x, 100);
         
         this.aktualneGesto = 0;
     }
