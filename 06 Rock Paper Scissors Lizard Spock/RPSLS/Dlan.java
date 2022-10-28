@@ -15,10 +15,7 @@ public class Dlan {
     }
     
     public void zmenNaPredchadzajuceGesto() {
-        this.aktualneGesto--;
-        if (this.aktualneGesto == -1) {
-            this.aktualneGesto = 4;
-        }
+        this.aktualneGesto = (this.aktualneGesto + 4) % 5;
         this.aktualizujGesto();
     }
     
