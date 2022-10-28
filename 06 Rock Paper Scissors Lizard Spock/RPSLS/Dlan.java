@@ -30,4 +30,26 @@ public class Dlan {
                 break;
         }
     }
+    
+    public void zmenNaPredchadzajuceGesto() {
+        this.aktualneGesto--;
+        
+        switch (this.aktualneGesto) {
+            case 0:
+                this.gesto.zmenObrazok("pics\\lizard.png");
+                break;
+            case 1:
+                this.gesto.zmenObrazok("pics\\paper.png");
+                break;
+            case 2:
+                this.gesto.zmenObrazok("pics\\rock.png");
+                break;
+            case 3:
+                this.gesto.zmenObrazok("pics\\scissors.png");
+                break;
+            case 4:
+                this.gesto.zmenObrazok("pics\\spock.png");
+                break;
+        }
+    }
 }
