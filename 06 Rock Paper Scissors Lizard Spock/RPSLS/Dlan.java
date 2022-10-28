@@ -9,6 +9,11 @@ public class Dlan {
         this.aktualneGesto = 0;
     }
     
+    public void zmenGestoPodlaCisla(int gesto) {
+        this.aktualneGesto = gesto;
+        this.aktualizujGesto();
+    }
+    
     public void zmenNaDalsieGesto() {
         this.aktualneGesto = (this.aktualneGesto + 1) % 5;
         this.aktualizujGesto();
