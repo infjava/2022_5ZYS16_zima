@@ -17,9 +17,9 @@ public class Osoba {
     
     public double getMaximalneBody() {
         double maximum = Double.NEGATIVE_INFINITY;
-        for (Double body : this.body) {
-            if (body.doubleValue() > maximum) {
-                maximum = body.doubleValue();
+        for (double body : this.body) {
+            if (body > maximum) {
+                maximum = body;
             }
         }
         
