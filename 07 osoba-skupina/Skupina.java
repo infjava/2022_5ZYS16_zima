@@ -8,13 +8,9 @@ public class Skupina {
     }
     
     public void pridajObjektOsoba(Osoba novaOsoba) {
-        for (Osoba osoba : this.osoby) {
-            if (osoba.equals(novaOsoba)) {
-                return;
-            }
+        if (!this.jeClenomSkupiny(novaOsoba)) {
+            this.osoby.add(novaOsoba);
         }
-        
-        this.osoby.add(novaOsoba);
     }
     
     public void pridajNovuOsobu(String noveMeno, String novePriezvisko) {
@@ -23,8 +19,11 @@ public class Skupina {
     }
     
     public boolean jeClenomSkupiny(Osoba hladanaOsoba) {
-        // Doplnit!
-        // Poznamka: V metóde nepouzivajte vetvenie (prikaz IF)!
+        for (Osoba osoba : this.osoby) {
+            if (osoba.equals(hladanaOsoba)) {
+                return true;
+            }
+        }
         return false;
     }
         
