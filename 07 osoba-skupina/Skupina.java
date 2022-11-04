@@ -28,15 +28,13 @@ public class Skupina {
     }
         
     public int getPocetClenovSkupiny() {
-        // Doplnit!
-        // Na prvy pohlad sa metoda javi ako getter. Potrebujem novy atribut? Preco?  
-        // Pri kazdej uprave zoznamu by sa musel aktualizovat, co nie je vhodne.
-        return 0;
+        return this.osoby.size();
     }
         
     public void vypisClenovSkupiny() {
-        // Doplnit!
-        // Ukazat vsetky 3 cykly - foreach, while s lokalnou premennou aj for (pristup k prvkom cez get(i)
+        for (Osoba osoba : this.osoby) {
+            osoba.vypis();
+        }
     }
     
     public void odstranPodlaPoradia(int poradie) {
