@@ -8,7 +8,9 @@ public class Skupina {
     }
     
     public void pridajObjektOsoba(Osoba novaOsoba) {
-        this.osoby.add(novaOsoba);
+        if (!this.osoby.contains(novaOsoba)) {
+            this.osoby.add(novaOsoba);
+        }
     }
     
     public void pridajNovuOsobu(String noveMeno, String novePriezvisko) {
