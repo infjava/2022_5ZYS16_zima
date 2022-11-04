@@ -14,6 +14,17 @@ public class Osoba {
     public void pridajHodnotenie(double body) {
         this.body.add(body);
     }
+    
+    public double getMaximalneBody() {
+        double maximum = Double.NEGATIVE_INFINITY;
+        for (Double body : this.body) {
+            if (body.doubleValue() > maximum) {
+                maximum = body.doubleValue();
+            }
+        }
+        
+        return maximum;
+    }
 
     public String getMeno() {
         return this.meno;
