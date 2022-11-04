@@ -14,8 +14,8 @@ public class Skupina {
     }
     
     public void pridajNovuOsobu(String noveMeno, String novePriezvisko) {
-        // Doplnit!
-        // Poznamka: Vysvetlit anonymny objekt.
+        Osoba nova = new Osoba(noveMeno, novePriezvisko);
+        this.pridajObjektOsoba(nova);
     }
     
     public boolean jeClenomSkupiny(Osoba hladanaOsoba) {
