@@ -8,9 +8,13 @@ public class Skupina {
     }
     
     public void pridajObjektOsoba(Osoba novaOsoba) {
-        if (!this.osoby.contains(novaOsoba)) {
-            this.osoby.add(novaOsoba);
+        for (Osoba osoba : this.osoby) {
+            if (osoba.equals(novaOsoba)) {
+                return;
+            }
         }
+        
+        this.osoby.add(novaOsoba);
     }
     
     public void pridajNovuOsobu(String noveMeno, String novePriezvisko) {

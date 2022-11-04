@@ -18,4 +18,9 @@ public class Osoba {
     public void vypis() {
         System.out.println(this.meno + " " + this.priezvisko);
     }
+    
+    public boolean equals(Osoba druha) {
+        return this.meno.equals(druha.getMeno())
+                && this.priezvisko.equals(druha.getPriezvisko());
+    }
 }
