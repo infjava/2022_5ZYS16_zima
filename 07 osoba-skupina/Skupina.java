@@ -48,4 +48,12 @@ public class Skupina {
     public void zrusSkupinu() {
         this.osoby.clear();
     }
+    
+    public void vypisOsobySInicialkami(String inicialky) {
+        for (Osoba osoba : this.osoby) {
+            if (osoba.getInicialky().equals(inicialky)) {
+                osoba.vypis();
+            }
+        }
+    }
 }

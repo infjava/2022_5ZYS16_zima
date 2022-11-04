@@ -23,4 +23,11 @@ public class Osoba {
         return this.meno.equals(druha.getMeno())
                 && this.priezvisko.equals(druha.getPriezvisko());
     }
+    
+    public String getInicialky() {
+        return new StringBuilder()
+            .append(this.meno.charAt(0))
+            .append(this.priezvisko.charAt(0))
+            .toString();
+    }
 }
