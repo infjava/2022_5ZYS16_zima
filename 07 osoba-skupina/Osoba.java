@@ -1,10 +1,18 @@
+import java.util.ArrayList;
+
 public class Osoba {
     private String meno;
     private String priezvisko;
+    private ArrayList<Double> body;
 
     public Osoba(String meno, String priezvisko) {
         this.meno = meno;
         this.priezvisko = priezvisko;
+        this.body = new ArrayList<Double>();
+    }
+    
+    public void pridajHodnotenie(double body) {
+        this.body.add(body);
     }
 
     public String getMeno() {
