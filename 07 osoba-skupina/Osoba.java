@@ -25,6 +25,22 @@ public class Osoba {
         
         return maximum;
     }
+    
+    public double getPriemerneBody() {
+        if (this.body.isEmpty()) {
+            return 0;
+        }
+        return this.getCelkoveBody() / this.body.size();
+    }
+    
+    public double getCelkoveBody() {
+        double sucet = 0;
+        for (double body : this.body) {
+            sucet = sucet + body;
+        }
+        
+        return sucet;
+    }
 
     public String getMeno() {
         return this.meno;
