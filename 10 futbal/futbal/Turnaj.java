@@ -47,6 +47,9 @@ public class Turnaj {
         
         this.vysledky[indexDomaci][indexHostia] = vysledokDomaci;
         this.vysledky[indexHostia][indexDomaci] = vysledokHostia;
+        
+        this.timy[indexDomaci].pridajBody(vysledokDomaci.getPocetBodov());
+        this.timy[indexHostia].pridajBody(vysledokHostia.getPocetBodov());
     }
     
     private int getIndexTimu(String nazov) {
