@@ -43,7 +43,10 @@ public class Turnaj {
             return;
         }
         
+        VysledokZapasu vysledokHostia = vysledokDomaci.getOpacny();
+        
         this.vysledky[indexDomaci][indexHostia] = vysledokDomaci;
+        this.vysledky[indexHostia][indexDomaci] = vysledokHostia;
     }
     
     private int getIndexTimu(String nazov) {

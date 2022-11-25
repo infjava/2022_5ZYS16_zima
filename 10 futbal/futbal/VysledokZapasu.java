@@ -15,4 +15,15 @@ public enum VysledokZapasu {
     public int getPocetBodov() {
         return this.pocetBodov;
     }
+    
+    public VysledokZapasu getOpacny() {
+        switch (this) {
+            case VYHRA:
+                return PREHRA;
+            case PREHRA:
+                return VYHRA;
+            default:
+                return this;
+        }
+    }
 }
