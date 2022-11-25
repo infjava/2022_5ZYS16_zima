@@ -20,4 +20,9 @@ public class Tim {
     public int getPocetBodov() {
         return this.pocetBodov;
     }
+    
+    public void pridajBody(int kolko) {
+        this.pocetBodov += kolko;
+        // this.pocetBodov = this.pocetBodov + kolko;
+    }
 }
