@@ -33,4 +33,26 @@ public class Turnaj {
             System.out.println();
         }
     }
+    
+    public void vlozVysledok(String domaci, String hostia, VysledokZapasu vysledokDomaci) {
+        int indexDomaci = this.getIndexTimu(domaci);
+        int indexHostia = this.getIndexTimu(hostia);
+        
+        if (indexDomaci == -1 || indexHostia == -1) {
+            System.out.println("Nespravny nazov timu");
+            return;
+        }
+        
+        this.vysledky[indexDomaci][indexHostia] = vysledokDomaci;
+    }
+    
+    private int getIndexTimu(String nazov) {
+        for (int i = 0; i < this.timy.length; i++) {
+            if (this.timy[i].getNazov().equals(nazov)) {
+                return i;
+            }
+        }
+        
+        return -1;
+    }
 }
