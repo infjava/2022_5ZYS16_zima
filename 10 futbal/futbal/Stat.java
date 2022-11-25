@@ -1,0 +1,8 @@
+public enum Stat {
+    SLOVENSKA_REPUBLIKA,
+    CESKA_REPUBLIKA,
+    POLSKO,
+    MADARSKO,
+    RAKUSKO,
+    UKRAJINA
+}
