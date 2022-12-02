@@ -12,4 +12,14 @@ public class SegmentVlaciku {
         this.obrazok.zmenUhol(pozicia.getSmer().getUhol());
         this.obrazok.zobraz();
     }
+    
+    public void posunSa(Smer smer) {
+        Pozicia nova = this.pozicia.posun(smer);
+        
+        this.obrazok.posunVodorovne((nova.getX() - this.pozicia.getX()) * 35);
+        this.obrazok.posunZvisle((nova.getY() - this.pozicia.getY()) * 35);
+        this.obrazok.zmenUhol(nova.getSmer().getUhol());
+        
+        this.pozicia = nova;
+    }
 }
