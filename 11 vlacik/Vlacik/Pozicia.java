@@ -22,17 +22,10 @@ public class Pozicia {
     }
     
     public Pozicia posun(Smer smer) {
-        switch (smer) {
-            case VLAVO:
-                return new Pozicia(this.x - 1, this.y, smer);
-            case VPRAVO:
-                return new Pozicia(this.x + 1, this.y, smer);
-            case HORE:
-                return new Pozicia(this.x, this.y - 1, smer);
-            case DOLE:
-                return new Pozicia(this.x, this.y + 1, smer);
-            default:
-                return this;
-        }
+        return new Pozicia(
+            this.x + smer.getZmenaX(),
+            this.y + smer.getZmenaY(),
+            smer
+        );
     }
 }
