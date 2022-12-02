@@ -1,21 +1,16 @@
 public enum Smer {
-    HORE,
-    DOLE,
-    VLAVO,
-    VPRAVO;
+    HORE(90),
+    DOLE(270),
+    VLAVO(0),
+    VPRAVO(180);
+    
+    private int uhol;
+    
+    Smer(int uhol) {
+        this.uhol = uhol;
+    }
     
     public int getUhol() {
-        switch (this) {
-            case HORE:
-                return 90;
-            case DOLE:
-                return 270;
-            case VLAVO:
-                return 0;
-            case VPRAVO:
-                return 180;
-            default:
-                return 0;
-        }
+        return this.uhol;
     }
 }
