@@ -30,7 +30,7 @@ public class Hlavna {
                         System.out.format("%d. %s%n", i, krajiny[i]);
                     }
                     System.out.print("> ");
-                    int cisloKrajiny = vstup.nextInt();
+                    int cisloKrajiny = Integer.parseInt(vstup.nextLine());
                     Krajina krajinaTimu = krajiny[cisloKrajiny];
                     System.out.format("Tim %s z krajiny %s pridany do zoznamu%n", nazovTimu, krajinaTimu);
                     
